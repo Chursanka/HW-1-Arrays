@@ -1,4 +1,3 @@
-# Задача - "Тwo sum"
 def two_sum (arr, target):
     l = 0
     r = len(arr) - 1
