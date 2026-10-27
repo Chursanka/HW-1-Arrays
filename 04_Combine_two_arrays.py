@@ -1,4 +1,4 @@
-def merge_sorted_arrays(arr1, arr2) 
+def sum_two_sort_arr(arr1, arr2) 
     res = []
     i = 0
     j = 0
