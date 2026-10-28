@@ -5,8 +5,8 @@ def sort_01(arr):
         if (arr[left] == 1):
             arr[left], arr[right] = arr[right], arr[left]
             right -= 1
-        else 
+        else:
             left += 1
- return arr
+    return arr
 
 # В самом худшем случае цикл произведет n/2 "swap", что соответсвует сложности O(n)
