@@ -1,4 +1,4 @@
-def sum_two_sort_arr(arr1, arr2) 
+def sum_two_sort_arr(arr1, arr2):
     res = []
     i = 0
     j = 0
@@ -9,6 +9,6 @@ def sum_two_sort_arr(arr1, arr2)
         else:
             res.append(arr2[j])
             j += 1
-    res.append(arr1[i:])
-    res.append(arr2[j:])
+    res.extend(arr1[i:])
+    res.extend(arr2[j:])
     return res
