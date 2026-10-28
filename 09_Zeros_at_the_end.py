@@ -1,17 +1,10 @@
 def zero_back(arr):
-    left = 0
-    right = len(arr) - 1
-    while arr[right] == 0:
-        right -= 1
-    cur = 0
-    while cur < right:
-        if arr[cur] == 0:
-            t = arr[right]
-            arr[right] = arr[cur]
-            arr[cur] = t
-            right -= 1
-            while arr[right] == 0:
-                    right -= 1
-        else:
-            cur += 1
-    return arr
+    cnt = 0
+    for i in range(len(arr)):
+        if arr[i] != 0:
+            arr[w] = arr[i]
+            w += 1
+    for i in range(w, len(arr)):
+        arr[i] = 0
+
+# Сложность линейная, потому что в самом худшем случае программа
