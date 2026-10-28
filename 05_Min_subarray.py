@@ -10,7 +10,6 @@ def min_sub_arr(arr, target):
                 res = cur_len
             s -= arr[left]
             left += 1
-        right += 1
     if res == len(arr) + 1:
         res = 0
     return res
