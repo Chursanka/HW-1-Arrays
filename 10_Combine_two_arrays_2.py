@@ -1,16 +1,16 @@
 # Без дополнительных аллокаций
 def sum_two_sort_arr(arr1, arr2):
- pointer1 = len(arr1) - len(arr2) - 1
- pointer2 = len(arr2) - 1
- pointer3 = len(arr1) - 1
- while (pointer2 >= 0):
-  if (pointer1 >= 0) and (arr1[pointer1] > arr2[pointer2]):
-   arr1[pointer3] = arr1[pointer1]
-  pointer1 -= 1
-  else:
-  arr1[pointer3] = arr2[pointer2]
-  pointer2 -= 1
-  pointer3 -= 1
- return arr
+    pointer1 = len(arr1) - len(arr2) - 1
+    pointer2 = len(arr2) - 1
+    pointer3 = len(arr1) - 1
+    while (pointer2 >= 0):
+        if (pointer1 >= 0) and (arr1[pointer1] > arr2[pointer2]):
+            arr1[pointer3] = arr1[pointer1]
+            pointer1 -= 1
+        else:
+            arr1[pointer3] = arr2[pointer2]
+            pointer2 -= 1
+            pointer3 -= 1
+    return arr1
 
 # Перезаписывания данных не происходит, потому что каждая запись попадает либо в пустую ячейку, либо в ячейку, чьё старое значение мы уже скопировали правее
